@@ -97,9 +97,10 @@ div.content {
                 <!-- The sidebar -->
                 <div class="sidebar">
                 <a class="active" href="#home">Home</a>
-                <a href="#news">News</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a href="#news">Student</a>
+                <a href="#contact">Teacher</a>
+                <a href="#about">Enrollment</a>
+                <a href="#about">Payment</a>
                 </div>
             </div>
             <div class="col-md-9">
