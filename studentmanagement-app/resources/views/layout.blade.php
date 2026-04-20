@@ -12,10 +12,9 @@
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 100%;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
+  height: 100vh;
   overflow: auto;
 }
 
@@ -39,11 +38,10 @@
   color: white;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/* Page content. */
 div.content {
-  margin-left: 200px;
   padding: 1px 16px;
-  height: 1000px;
+  height: auto;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -54,7 +52,6 @@ div.content {
     position: relative;
   }
   .sidebar a {float: left;}
-  div.content {margin-left: 0;}
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
