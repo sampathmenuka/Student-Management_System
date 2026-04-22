@@ -23,8 +23,12 @@ return new class extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
+    /**feat: implement teacher CRUD operations and add courses table migration
+     * Reverse the migrations. 
+     * 
+     * 
+     * 
+     * 
      */
     public function down(): void
     {
