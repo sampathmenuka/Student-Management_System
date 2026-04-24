@@ -96,6 +96,7 @@ div.content {
                 <a class="active" href="{{ url('/') }}">Home</a>
                 <a href="{{ url('/students') }}">Student</a>
                 <a href="{{ url('/teachers') }}">Teacher</a>
+                <a href="{{ url('/courses') }}">Course</a>
                 <a href="#about">Enrollment</a>
                 <a href="#about">Payment</a>
                 </div>
