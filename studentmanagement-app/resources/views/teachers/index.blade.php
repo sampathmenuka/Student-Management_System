@@ -5,7 +5,7 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h2>teacher Application</h2>
+                    <h2>Teachers Page</h2>
                 </div>
 
                 <div class="card-body">
