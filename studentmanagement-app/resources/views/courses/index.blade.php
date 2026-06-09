@@ -5,12 +5,12 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h2>Teachers Page</h2>
+                    <h2>Courses Page</h2>
                 </div>
 
                 <div class="card-body">
 
-                    <a href="{{ url('/teachers/create') }}" class="btn btn-success btn-sm" title="Add New teacher">
+                    <a href="{{ url('/courses/create') }}" class="btn btn-success btn-sm" title="Add New Course">
                         <i class="fa fa-plus" aria-hidden="true"></i> Add New
                     </a>
 
@@ -21,39 +21,39 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Address</th>
-                                    <th>Mobile</th>
+                                    <th>Course Name</th>
+                                    <th>Syllabus</th>
+                                    <th>Duration</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                @foreach($teachers as $item)
+                                @foreach($courses as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
-                                        <td>{{ $item->address }}</td>
-                                        <td>{{ $item->mobile }}</td>
+                                        <td>{{ $item->syllabus }}</td>
+                                        <td>{{ $item->duration }}</td>
 
                                         <td>
                                             <!-- View Button -->
-                                            <a href="{{ url('/teachers/' . $item->id) }}" 
-                                               title="View teacher" 
+                                            <a href="{{ url('/courses/' . $item->id) }}" 
+                                               title="View Course" 
                                                class="btn btn-info btn-sm">
                                                 <i class="fa fa-eye" aria-hidden="true"></i> View
                                             </a>
 
                                             <!-- Edit Button -->
-                                            <a href="{{ url('/teachers/' . $item->id . '/edit') }}" 
-                                               title="Edit teacher" 
+                                            <a href="{{ url('/courses/' . $item->id . '/edit') }}" 
+                                               title="Edit Course" 
                                                class="btn btn-primary btn-sm">
                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                             </a>
 
                                             <!-- Delete Button -->
                                             <form method="POST"
-                                                  action="{{ url('/teachers/' . $item->id) }}"
+                                                  action="{{ url('/courses/' . $item->id) }}"
                                                   accept-charset="UTF-8"
                                                   style="display:inline">
 
@@ -62,7 +62,7 @@
 
                                                 <button type="submit"
                                                         class="btn btn-danger btn-sm"
-                                                        title="Delete teacher"
+                                                        title="Delete Course"
                                                         onclick="return confirm('Confirm delete?')">
                                                     <i class="fa fa-trash-o" aria-hidden="true"></i> Delete
                                                 </button>
